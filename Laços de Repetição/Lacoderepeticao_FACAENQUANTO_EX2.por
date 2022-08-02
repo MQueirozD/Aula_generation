@@ -13,8 +13,8 @@ números de 1 até ele. Ex.: o usuário entra 7, o programa vai mostrar 28, pois
 		escreva ("\nDigite um número: ")
 		leia(numero)
 		faca{
-		contador += numero    //
-		numero -= 1          //
+		contador += numero    //contador=contador +numero/ sobe o (numero-1)
+		numero -= 1          //numero - 1
 		}
 		enquanto(numero>=0)
 		escreva(contador)
@@ -25,7 +25,7 @@ números de 1 até ele. Ex.: o usuário entra 7, o programa vai mostrar 28, pois
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 340; 
+ * @POSICAO-CURSOR = 416; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
