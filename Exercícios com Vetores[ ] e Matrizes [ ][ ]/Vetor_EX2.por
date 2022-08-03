@@ -10,20 +10,24 @@ quantas foram as ocorrências da maior pontuação.
 	
 	funcao inicio()
 	{
-		inteiro dadoN[10],mairoP=0,dado,somaP=01
-		//maiorP é maior pontução
+		inteiro dadoN[10],mairoP=0,dado,somaP=01//maiorP é maior pontução
 		real media=0.0,soma=0.0
 		
 
 		para(inteiro i=0; i <10; i++){
 			escreva ("\nQual o numero do dado: ")//5 7 3 2
-			leia(dado)
-			se (mairoP<=dado){
-				mairoP = dado
+			leia(dadoN[i])
+			
+			soma += dadoN[i]
+			se (mairoP<dadoN[i]){
+				mairoP = dadoN[i]
+				//somaP ++
+			}
+			senao se(mairoP == dadoN[i]){
 				somaP ++
 			}
-			soma += dado
-			dadoN[i] += dado
+			
+			//dadoN[i] += dado
 
 		}
 		 escreva("\nSoma dos dados lançado foram: ",soma) //17
@@ -39,9 +43,9 @@ quantas foram as ocorrências da maior pontuação.
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 423; 
+ * @POSICAO-CURSOR = 615; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {dadoN, 13, 10, 5};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
